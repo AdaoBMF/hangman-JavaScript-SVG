@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hangman
+  </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header id="header">
+    <img id="header-logo" src="https://i.ibb.co/vYqDnfm/bmfLogo.png" alt="bmfLogo" border="0">
+    <h2 id="header-title">Jogo da Forca</h2>
+  </header>
+  <section id="svg">
+    <svg id="svg-panel" width="200" height="300">
+      <path d="M 5 290 h 180" stroke="brown" stroke-width="5px" />
+      <path d="M 15 290 v -280 h 92.5 v 10" fill="none" stroke-width="3px" stroke="brown" />
+      <path d="M 90 20 h30" stroke-width="2.5" stroke="brown" />
+      <circle id="head" cx="107" cy="52" r="30" stroke="#000" stroke-width="1px" fill="none" />
+      <path id="body" d="M 107 82 v 80" stroke="#000" stroke-width="1.5" />
+      <path id="right-arm" d="M 107 85 l -40 40" stroke="#000" stroke-width="1.5px" />
+      <path id="left-arm" d="M 107 85 l 40 40" stroke="#000" stroke-width="1.5px" />
+      <path id="right-leg" d="M 107 162 l -45 45 l -5 -5" stroke="#000" stroke-width="1.5px" fill="none" />
+      <path id="left-leg" d="M 107 162 l 45 45 l 5 -5" stroke="#000" stroke-width="1.5px" fill="none" />
+      <text id="right-eye" x="90" y="50" style="fill:#000; font-size: 10px">x</text>
+      <text id="left-eye" x="115" y="50" style="fill: #000; font-size: 10px">x</text>
+      <text id="right-eye-win" x="90" y="50" style="fill:#fff; font-size: 15px">O</text>
+      <text id="left-eye-win" x="115" y="50" style="fill:#fff; font-size: 15px">O</text>
+      <path id="mouth" d="M90,60 A30,50 10 0,0 125,60" fill=#fff stroke=white stroke-width=3 />
+      <text id="my" x="150" y="60" style="fill: #f5d418; font-size: 15px">
+        Meu
+      </text>
+      <text id="hero" x="150" y="80" style="fill: #f5d418; font-size: 15px">
+        Heroi!!
+      </text>
+      <circle id="head-win" cx="107" cy="52" r="30" stroke="#fff" stroke-width="3px" fill="none" />
+    </svg>
+  </section>
+  <section>
+    <p id="life">Vidas: 6/6</p>
+    <p id="word">Palavra: _ _ A _ _</p>
+      <label id="guess-label" for="guess">Chute: <input autofocus type="text" id="guess" autocomplete="off"
+        placeholder="Digite uma letra por vez" autofocus style="text-transform:uppercase"></label><button onclick="shot()"
+        id="btnShot">Enviar</button>
+      <p style="display: none" id="miss">Erros: </p>
+      <button id="btnRestart" onclick="restart()" style="display:none">Reiniciar</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

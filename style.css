@@ -1,0 +1,99 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+#header{
+	height: 10%;
+    background: #b3b3b3;
+	display: flex;
+	/*flax-direction*/
+}
+#header-logo{
+	width:20%;
+}
+#header-title{
+	margin: 1rem auto;
+}
+#svg{
+	margin: 1rem;
+}
+#right-eye{
+	display: none;
+    animation: loser 1.5s linear infinite;
+}
+#left-eye{
+	display: none;
+    animation: loser 1.5s linear infinite;
+}
+#head{
+	display: none;
+}
+#body{
+	display: none;
+}
+#right-arm{
+	display: none;
+}
+#left-arm{
+	display: none;
+}
+#right-leg{
+	display: none;
+}
+#left-leg{
+	display: none;
+}
+
+#head-win{
+	display: none;
+}
+
+#right-eye-win{
+	display: none;
+}
+
+#left-eye-win{
+	display: none;
+}
+
+#mouth{
+	display: none;
+}
+
+#my{
+	display: none;
+}
+
+#hero{
+	display:none;
+}
+
+.shablauwn{
+	animation: winner 1.5s linear infinite
+}
+@keyframes winner {
+	0%{
+		font-size: 1rem;
+	}
+	50%{
+		font-size: 2.5rem;
+	}
+	100%{
+		font-size: 1rem;
+	}
+}
+@keyframes loser {
+	0%{
+		font-size: 10px;
+	}
+	50%{
+		font-size: 15px;
+	}
+	100%{
+		font-size: 10px;
+	}
+}
+#svg-panel{
+	background: #b3b3b3;
+	border: solid 1px #000;
+}
