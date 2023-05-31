@@ -1,7 +1,10 @@
 # Hangman - JavaScript - SVG
 
-### Jogo da Forca com o Enforcado dinâmico
+## Jogo da Forca com o Enforcado dinâmico
 
 Desenvolvido em:
-  - HTML
-  - JS
+
+- HTML
+- JS
+- SVG
+- CSS
